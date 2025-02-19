@@ -4,7 +4,7 @@
 # Detalles del servidor SFTP
 SFTP_SERVER="us-east-1.sftpcloud.io"
 SFTP_USER="fedenatt"
-SFTP_PASS="Camusgaladonna36!"
+SFTP_PASS="{$SFTP_PASS}" #Uso la variable de entorno
 LOG_REMOTO="LogR.txt"
 LOG_L="logL.txt"
 CSYNC="/home/$(whoami)/carpetaSincronizada"
