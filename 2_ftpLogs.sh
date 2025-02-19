@@ -4,8 +4,8 @@
 # Detalles del servidor FTP
 SFTP_SERVER="us-east-1.sftpcloud.io"
 SFTP_USER="fedenatt"
-SFTP_PASS="Camusgaladonna36!"  # Contraseña en el script
-LOG_LOCAL="LogL.txt"
+SFTP_PASS="{$SFTP_PASS}"  # Contraseña en el script
+LOG_REMOTO="LogR.txt"
 
 # Log into the SFTP server y guardar todo en el log
 {
@@ -16,4 +16,4 @@ ls
 EOF
 bye
     echo "FTP SESION COMPLETADA"
-} > "$LOG_LOCAL" #2>&1 me quita el output de pantalla 
+} > "$LOG_REMOTO" #2>&1 me quita el output de pantalla 

@@ -4,7 +4,7 @@
 #Detalles del servidor FTP
 SFTP_SERVER="us-east-1.sftpcloud.io"
 SFTP_USER="fedenatt"
-SFTP_PASS="Camusgaladonna36!"
+SFTP_PASS="{$SFTP_PASS}"
 
 #Log into the SFTP server
 echo "ls" | sftp -oport=22  $SFTP_USER@$SFTP_SERVER
